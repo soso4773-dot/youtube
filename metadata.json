@@ -1,0 +1,5 @@
+{
+  "name": "TubeGenius - AI YouTube Script Creator",
+  "description": "사용자의 대본 스타일을 분석하여 새로운 주제를 추천하고, 맞춤형 대본을 생성해주는 AI 도구입니다.",
+  "requestFramePermissions": []
+}

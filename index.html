@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TubeGenius - AI YouTube Script Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#f0fdfa',
+                100: '#ccfbf1',
+                200: '#99f6e4',
+                300: '#5eead4',
+                400: '#2dd4bf',
+                500: '#14b8a6',
+                600: '#0d9488',
+                700: '#0f766e',
+                800: '#115e59',
+                900: '#134e4a',
+                950: '#042f2e',
+              },
+              dark: {
+                bg: '#0f172a',
+                card: '#1e293b',
+                input: '#334155',
+              }
+            },
+            fontFamily: {
+              sans: ['Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+      body {
+        font-family: 'Pretendard', sans-serif;
+        background-color: #0f172a;
+        color: #e2e8f0;
+      }
+      /* Custom scrollbar for better aesthetics */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1e293b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@heroicons/react/": "https://aistudiocdn.com/@heroicons/react@^2.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
